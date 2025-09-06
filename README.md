@@ -3,11 +3,10 @@
 ### Desktop and Mobile view
 ![OTP Component Desktop](docs/screenshots/main.png)
 
-### Error State
-![OTP Error State](docs/screenshots/otp-error.png)
-
-### Success State
-![OTP Error State](docs/screenshots/otp-success.png)
+<div align="center">
+  <img src="docs/screenshots/otp-error.png" alt="Error State" width="45%">
+  <img src="docs/screenshots/otp-success.png" alt="Success State" width="45%">
+</div>
 
 <!-- ### Demo
 ![OTP Demo](docs/demo.gif) -->
