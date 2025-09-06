@@ -1,69 +1,90 @@
-# React + TypeScript + Vite
+## 🔧 Key Features Explained
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Auto-focus Management
 
-Currently, two official plugins are available:
+- Automatically moves focus to the next field when a digit is entered
+- Moves to previous field on backspace
+- Supports arrow key navigation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Paste Support
 
-## Expanding the ESLint configuration
+- Detects when OTP is pasted from clipboard
+- Automatically fills all fields with pasted digits
+- Validates and submits if complete OTP is pasted
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Keyboard Navigation
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Arrow Keys**: Navigate between fields
+- **Backspace**: Clear current field and move to previous
+- **Delete**: Clear current field
+- **Numbers**: Enter digits (0-9)
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### Error Handling
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Visual error state with red styling
+- Clear error messages
+- Auto-clear errors on new input
+
+### Success States
+
+- Green success indication
+- Auto-disable inputs after successful verification
+- Success message display
+
+## �� Testing
+
+```bash
+# Run tests
+npm test
+
+# Run tests in watch mode
+npm run test:watch
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📱 Mobile Support
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Optimized for touch devices
+- Responsive design
+- Touch-friendly input fields
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🔒 Security Features
+
+- Input validation (numbers only)
+- Prevents XSS through proper input sanitization
+- Secure clipboard handling
+
+## 🛠️ Development
+
+### Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+- `npm test` - Run tests
+
+### Tech Stack
+
+- **React 19** - UI library
+- **TypeScript** - Type safety
+- **Vite** - Build tool
+- **Jest** - Testing framework
+- **ESLint** - Code linting
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests if applicable
+5. Submit a pull request
+
+## 📝 License
+
+This project is licensed under the MIT License.
+
+## �� Acknowledgments
+
+- Built with modern React patterns
+- Follows accessibility best practices
+- Optimized for mobile-first design
