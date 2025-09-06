@@ -1,0 +1,21 @@
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.branding--logo {
+  color: #228be6;
+}
+
+.branding--logo-icon {
+  color: #228be6;
+  height: 60px;
+  width: 60px;
+}
+
+.branding--name {
+  color: #228be6;
+  font-size: 30px;
+  font-weight: 600;
+}

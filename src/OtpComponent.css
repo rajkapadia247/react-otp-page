@@ -1,0 +1,138 @@
+.heading-box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: 600;
+  color: #344054;
+}
+
+.subtitle {
+  color: #475467;
+  font-size: 16px;
+}
+
+.otp-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.otp-inputs {
+  display: flex;
+  gap: 6px;
+}
+
+.otp-input {
+  height: 44px;
+  width: 44px;
+  font-size: 18px;
+  text-align: center;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  transition: border-color 0.2s ease;
+  caret-color: transparent;
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.otp-input::-webkit-outer-spin-button,
+.otp-input::-webkit-inner-spin-button {
+  -webkit-appearance: none; /* Chrome, Safari, Edge */
+  margin: 0;
+}
+
+.otp-input::selection {
+  background-color: transparent;
+}
+
+.otp-input:hover,
+.otp-input:active {
+  border-color: #228be6;
+}
+
+.otp-input:focus-visible {
+  outline: 1px solid #228be6;
+}
+
+.otp-input.disabled {
+  border: 1px solid #eaedef;
+  background: #eaedef;
+}
+
+.otp-input.error {
+  border-color: #c24a3f;
+}
+
+.otp-input.error:hover,
+.otp-input.error:active {
+  outline: none;
+}
+
+.otp-input.error:focus-visible {
+  outline: 1px solid #c24a3f;
+}
+
+.error-msg {
+  font-size: 12px;
+  color: #c24a3f;
+  align-self: flex-start;
+}
+
+.success-msg {
+  font-size: 14px;
+  color: #344054;
+  align-self: flex-start;
+}
+
+.retry {
+  color: #344054;
+  font-size: 16px;
+}
+
+.hint {
+  color: #344054;
+  font-size: 10px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.send-again-btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  font-size: 16px;
+  color: #228be6;
+  font-weight: 500;
+}
+
+.send-again-btn:focus {
+  outline: 2px solid #228be6;
+  outline-offset: 1px;
+}
+
+.copy-btn {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.copy-btn:focus {
+  outline: 2px solid #228be6;
+  outline-offset: 1px;
+}
+
+.copy-icon {
+  width: 16px;
+  height: 16px;
+  color: #344054;
+}
