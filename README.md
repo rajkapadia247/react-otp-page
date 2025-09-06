@@ -1,3 +1,17 @@
+## 📸 Screenshots
+
+### Desktop and Mobile view
+![OTP Component Desktop](docs/screenshots/main.png)
+
+### Error State
+![OTP Error State](docs/screenshots/otp-error.png)
+
+### Success State
+![OTP Error State](docs/screenshots/otp-success.png)
+
+<!-- ### Demo
+![OTP Demo](docs/demo.gif) -->
+
 ## 🔧 Key Features Explained
 
 ### Auto-focus Management
