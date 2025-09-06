@@ -8,8 +8,8 @@
   <img src="docs/screenshots/otp-success.png" alt="Success State" width="45%">
 </div>
 
-<!-- ### Demo
-![OTP Demo](docs/demo.gif) -->
+### Demo
+![OTP Demo](docs/screenshots/demo.gif)
 
 ## 🔧 Key Features Explained
 
